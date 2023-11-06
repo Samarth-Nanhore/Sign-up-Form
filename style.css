@@ -1,5 +1,12 @@
 :root {
   box-sizing: border-box;
+  --system-font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@font-face {
+  font-family: norse-bold-font;
+  src: url("./fonts/Norse-Bold\ \(1\).otf");
 }
 
 body {
@@ -26,4 +33,8 @@ body {
   height: 120px;
   background-color: rgba(0, 0, 0, 0.5);
   margin-top: 140px;
+}
+
+.logo-container > p {
+  font-family: norse-bold-font, var(--system-font-family), sans-serif;
 }
