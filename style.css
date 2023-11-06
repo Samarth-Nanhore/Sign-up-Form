@@ -1,0 +1,17 @@
+:root {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.bg-img-container {
+  width: max(453px, 25%);
+  background-image: url("./img//halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
