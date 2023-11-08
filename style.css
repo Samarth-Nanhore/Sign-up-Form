@@ -3,6 +3,7 @@
   --system-font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --bg-img-container-color: white;
+  --sign-up-form-container-color: #f9fafb;
 }
 
 @font-face {
@@ -65,12 +66,15 @@ body {
 
 .signup-form-container {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--system-font-family), sans-serif;
 }
 
 .heading-container {
   height: 254px;
   margin-top: 0px;
-  background: #f9fafb;
+  background: var(--sign-up-form-container-color);
 }
 
 .heading-container > div {
@@ -79,4 +83,76 @@ body {
   padding-left: 45px;
   font-family: var(--system-font-family), sans-serif;
   font-weight: 600;
+}
+
+.form-container {
+  padding-left: 45px;
+  height: 320px;
+  box-shadow: -1px 18px 20px -25px rgba(0, 0, 0, 0.9);
+}
+
+.form-container form {
+  display: flex;
+  gap: 75px;
+}
+
+.form-one {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-two {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input {
+  width: 265px;
+  height: 13px;
+  padding: 10px;
+  border: 2px solid #e5e7eb;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border: 1.8px solid blue;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+}
+
+/* Number input arrow hidden */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type="password"]:valid {
+  outline: none;
+  border: 1.8px solid red;
+}
+
+.form-one div:nth-child(2),
+.form-one div:nth-child(3),
+.form-two div:nth-child(2),
+.form-two div:nth-child(3) {
+  margin-top: 15px;
+}
+
+.form-one div:nth-child(3) > p {
+  margin: 0;
+  color: red;
+  font-size: 12px;
 }
