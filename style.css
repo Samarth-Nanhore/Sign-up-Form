@@ -89,6 +89,7 @@ body {
   padding-left: 45px;
   height: 320px;
   box-shadow: -1px 18px 20px -25px rgba(0, 0, 0, 0.9);
+  margin-bottom: 10px;
 }
 
 .form-container form {
@@ -155,4 +156,39 @@ input[type="password"]:valid {
   margin: 0;
   color: red;
   font-size: 12px;
+}
+
+.btn-container {
+  padding-left: 45px;
+  padding-top: 45px;
+  flex: 2;
+  background-color: var(--sign-up-form-container-color);
+}
+
+.btn-container > p {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.btn-container > p span {
+  margin: 5px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #596d48;
+  cursor: pointer;
+}
+
+.create-account-btn {
+  border: 1px solid;
+  width: 180px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  color: white;
+  background-color: #596d48;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
 }
